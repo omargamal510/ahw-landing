@@ -339,9 +339,11 @@
     <!-- Footer -->
     <footer class="relative left-0 right-0 bottom-0 text-white mt-10">
       <div class="footer-wrapper">
-        <div class="container-custom flex items-center justify-between h-full">
+        <div
+          class="container-custom flex flex-col lg:flex-row items-start gap-3 lg:items-center justify-between h-full"
+        >
           <ul
-            class="right-footer w-full h-full flex items-center gap-16 [&>*]:font-bold"
+            class="right-footer w-full h-full flex flex-col lg:flex-row items-start text-sm lg:text-lg lg:items-center gap-5 lg:gap-10 [&>*]:font-medium"
           >
             <img class="w-[70px]" src="imgs/logo.svg" />
             <li>
@@ -398,9 +400,9 @@
 
             <div class="">
               <ul
-                class="flex justify-center gap-2 items-center [&>*]:text-xs font-bold"
+                class="flex justify-center items-center [&>*]:text-xs text-center"
               >
-                <li>
+                <li class="px-2">
                   <a href="#">وثيقة الخصوصية</a>
                 </li>
 
@@ -408,13 +410,16 @@
                   <a href="#">فريق التحرير</a>
                 </li>
 
-                <li>
+                <li class="px-2">
                   <a href="#">خريطة التحرير</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+        <p class="text-xs text-center mt-10">
+          جميع الحقوق محفوظة لعرب هاردوير © 2024
+        </p>
       </div>
     </footer>
     <!-- Footer -->
