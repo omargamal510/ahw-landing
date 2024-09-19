@@ -91,3 +91,15 @@ nav {
 .red-box-shadow {
   box-shadow: "3px 3px 1px #ccc";
 }
+
+footer {
+  background: url("../imgs/footer-back1.webp") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.footer-wrapper {
+  background-color: #000000c5;
+  height: 100%;
+  padding: 50px 0px;
+}
