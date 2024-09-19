@@ -12,10 +12,14 @@
   font-family: "Cairo", sans-serif;
 }
 
+nav {
+  box-shadow: 0 3px 50px rgba(85, 85, 85, 0.5);
+}
+
 .container-custom {
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
   margin-left: auto;
   margin-right: auto;
 }
