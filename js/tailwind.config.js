@@ -7,6 +7,10 @@ tailwind.config = {
         customGray1: "#3d4144",
         whiteShadow: "#FFF",
       },
+
+      screens: {
+        lgMd: "991px", // Adding a custom breakpoint
+      },
     },
   },
 };

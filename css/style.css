@@ -42,6 +42,8 @@ nav {
   visibility: hidden;
 }
 
+/* End nav */
+
 /* Responsive Breakpoints */
 @media (min-width: 576px) {
   .container {
