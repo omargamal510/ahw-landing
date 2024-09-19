@@ -196,123 +196,112 @@
     -->
 
     <div
-      class="whole-page-grid mt-16 container-custom grid grid-cols-12 gap-4 h-screen overflow-hidden"
+      class="whole-page-grid mt-16 container-custom grid grid-cols-12 gap-4 overflow-hidden"
     >
       <!-- Side 1 of the page-->
-      <div class="col-span-12 lg:col-span-9">
+      <div class="col-span-12 lg:col-span-9 [&>*]:mt-10">
         <!-- Side one parts here -->
-        <div class="flex flex-col gap-10">
-          <!-- Start Trending section -->
-          <div class="trending gap-7 text-white flex-wrap hidden md:flex">
-            <h2 class="text-lg font-bold">تريند 🔥</h2>
-            <div class="flex gap-5 flex-wrap">
-              <a class="hover:text-red-500" href="#"
-                >مستجدات الحرب علي غزة ⭐</a
+
+        <!-- Start Trending section -->
+        <div class="trending gap-7 text-white flex-wrap hidden md:flex">
+          <h2 class="text-lg font-bold">تريند 🔥</h2>
+          <div class="flex gap-5 flex-wrap">
+            <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
+            <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
+            <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
+            <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
+            <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
+          </div>
+        </div>
+        <!-- End Trending -->
+
+        <!-- Start Page navigation -->
+        <div class="page-navigation mt-10">
+          <ul class="text-white flex justify-center items-center gap-5">
+            <li>
+              <a href="#" class="border-b-4 border-red-400 text-red-400 pb-2"
+                >الجميع</a
               >
-              <a class="hover:text-red-500" href="#"
-                >مستجدات الحرب علي غزة ⭐</a
-              >
-              <a class="hover:text-red-500" href="#"
-                >مستجدات الحرب علي غزة ⭐</a
-              >
-              <a class="hover:text-red-500" href="#"
-                >مستجدات الحرب علي غزة ⭐</a
-              >
-              <a class="hover:text-red-500" href="#"
-                >مستجدات الحرب علي غزة ⭐</a
-              >
+            </li>
+
+            <li>
+              <a href="#">من أجلك</a>
+            </li>
+          </ul>
+
+          <button class="page-bars mt-5 relative">
+            <i class="fa fa-bars text-white text-2xl">
+              <i class="fa fa-angle-left absolute right-[-7px] top-1"></i>
+            </i>
+          </button>
+        </div>
+
+        <!-- End Page navigation -->
+
+        <!-- blog and slider -->
+        <div class="blog-n-slider grid grid-cols-12 gap-4">
+          <div class="col-span-3 bg-blue-300 h-[385px]">
+            <div class="bg-custom-image w-full h-full">
+              <h2>بقلم عمر</h2>
             </div>
           </div>
-          <!-- End Trending -->
 
-          <!-- Start Page navigation -->
-          <div class="page-navigation mt-10">
-            <ul class="text-white flex justify-center items-center gap-5">
-              <li>
-                <a href="#" class="border-b-4 border-red-400 text-red-400 pb-2"
-                  >الجميع</a
-                >
-              </li>
-
-              <li>
-                <a href="#">من أجلك</a>
-              </li>
-            </ul>
-
-            <button class="page-bars mt-5 relative">
-              <i class="fa fa-bars text-white text-2xl">
-                <i class="fa fa-angle-left absolute right-[-7px] top-1"></i>
-              </i>
-            </button>
-          </div>
-
-          <!-- End Page navigation -->
-
-          <!-- blog and slider -->
-          <div class="blog-n-slider grid grid-cols-12 gap-4">
-            <div class="col-span-3 bg-blue-300 h-[385px]">
-              <div class="bg-custom-image w-full h-full">
-                <h2>بقلم عمر</h2>
-              </div>
-            </div>
-
-            <div class="w-full relative col-span-9">
-              <div
-                class="swiper default-carousel swiper-container rounded-xl w-full"
-              >
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div
-                      class="bg-indigo-50 rounded-2xl h-auto flex justify-center items-center relative"
-                    >
-                      <img
-                        src="imgs/downloadnow.webp"
-                        class="max-w-fit object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div
-                      class="bg-indigo-50 rounded-2xl h-auto flex justify-center items-center relative"
-                    >
-                      <img
-                        src="imgs/downloadnow.webp"
-                        class="max-w-fit object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div
-                      class="bg-indigo-50 rounded-2xl h-auto flex justify-center items-center relative"
-                    >
-                      <img
-                        src="imgs/downloadnow.webp"
-                        class="max-w-fit object-cover"
-                      />
-                    </div>
+          <div class="w-full relative col-span-9">
+            <div
+              class="swiper default-carousel swiper-container rounded-xl w-full"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div
+                    class="bg-indigo-50 rounded-2xl h-auto flex justify-center items-center relative"
+                  >
+                    <img
+                      src="imgs/downloadnow.webp"
+                      class="max-w-fit object-cover"
+                    />
                   </div>
                 </div>
-
-                <div class="swiper-pagination"></div>
+                <div class="swiper-slide">
+                  <div
+                    class="bg-indigo-50 rounded-2xl h-auto flex justify-center items-center relative"
+                  >
+                    <img
+                      src="imgs/downloadnow.webp"
+                      class="max-w-fit object-cover"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div
+                    class="bg-indigo-50 rounded-2xl h-auto flex justify-center items-center relative"
+                  >
+                    <img
+                      src="imgs/downloadnow.webp"
+                      class="max-w-fit object-cover"
+                    />
+                  </div>
+                </div>
               </div>
+
+              <div class="swiper-pagination"></div>
             </div>
           </div>
-          <!-- blog and slider -->
-          <!-- Downlod now -->
-
-          <div
-            class="download-now w-full bg-white h-[300px] text-black"
-            style="box-shadow: 0 10px 60px 10px rgba(224, 59, 59, 0.5)"
-          >
-            <a href="#">
-              <img src="imgs/downloadnow.webp" class="w-full" />
-            </a>
-          </div>
-
-          <!-- Download Now -->
-
-          <!-- Side one parts here -->
         </div>
+        <!-- blog and slider -->
+        <!-- Downlod now -->
+
+        <div
+          class="download-now w-full text-black"
+          style="box-shadow: 0 1px 40px 1px rgba(224, 59, 59, 0.5)"
+        >
+          <a href="#">
+            <img src="imgs/downloadnow.webp" class="w-full object-cover" />
+          </a>
+        </div>
+
+        <!-- Download Now -->
+
+        <!-- Side one parts here -->
       </div>
 
       <!-- ======================================================================================================================================================================================= 
@@ -324,6 +313,28 @@
       <div class="col-span-3 bg-gray00 border hidden lg:block">Side 2</div>
     </div>
 
+    <!-- Subscribe -->
+    <div
+      class="subsc text-white flex-col lgMd:flex-row container-custom mt-56 gap-5 flex items-center justify-around"
+    >
+      <div class="subsc-text flex flex-col gap-2">
+        <p class="text-left">واحصل علي خصم 10%</p>
+        <h2 class="text-2xl font-bold">اشترك في النشره الاخبارية</h2>
+      </div>
+
+      <div class="subsc-text flex">
+        <input
+          type="text"
+          placeholder="Type your Email"
+          class="h-10 px-2 w-72 bg-gray-600 rounded-br-lg rounded-tr-lg"
+        />
+        <button class="bg-red-400 rounded-bl-lg rounded-tl-lg mr-[-4px] px-4">
+          Subscribe
+        </button>
+      </div>
+    </div>
+
+    <!-- Subscribe -->
     <script>
       var swiper = new Swiper(".default-carousel", {
         loop: true,
