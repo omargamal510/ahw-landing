@@ -51,9 +51,9 @@
       <div
         class="container-custom flex justify-between items-center gap-5 h-full [&>*]:w-full [&>*]:h-9 [&>*]:bg-gray-"
       >
-        <section class="flex items-center gap-3">
+        <section class="flex items-center gap-2">
           <button class="sm-nav-toggle block lg:hidden">
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars w-full"></i>
           </button>
 
           <div class="flex">
@@ -115,7 +115,7 @@
             </button>
 
             <p
-              class="user-notification-count absolute top-[-10px] ml-[25px] bg-red-500 h-5 w-5 flex justify-center items-center rounded-full"
+              class="user-notification-count absolute top-[-7px] ml-[25px] bg-red-500 h-5 w-5 flex justify-center items-center rounded-full"
             >
               3
             </p>
@@ -210,8 +210,11 @@
     <div
       class="whole-page-grid mt-16 container-custom grid grid-cols-12 gap-4 overflow-hidden"
     >
+      <!--  -->
       <!-- Side 1 of the page-->
-      <div class="col-span-12 lg:col-span-9 [&>*]:mt-10">
+      <div
+        class="col-span-12 order-last lg:order-first lg:col-span-9 [&>*]:mt-10"
+      >
         <!-- Side one parts here -->
 
         <!-- Start Trending section -->
@@ -381,61 +384,8 @@
           </div>
         </div>
 
-        <!-- End -->
+        <!-- End Blog slider-->
 
-        <!-- blog and slider -->
-        <!-- <div class="blog-n-slider grid grid-cols-12 gap-4">
-          <div class="col-span-3 bg-blue-300 h-[385px]">
-            <div class="bg-custom-image w-full h-full">
-              <h2>بقلم عمر</h2>
-            </div>
-          </div>
-
-          <div class="w-full relative col-span-9">
-            <div
-              class="swiper default-carousel swiper-container rounded-xl w-full"
-            >
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div
-                    class="bg-indigo-50 rounded-2xl h-auto flex justify-center items-center relative"
-                  >
-                    <img
-                      src="imgs/downloadnow.webp"
-                      class="max-w-fit object-cover"
-                    />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="bg-indigo-50 rounded-2xl h-auto flex justify-center items-center relative"
-                  >
-                    <img
-                      src="imgs/downloadnow.webp"
-                      class="max-w-fit object-cover"
-                    />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div
-                    class="bg-indigo-50 rounded-2xl h-auto flex justify-center items-center relative"
-                  >
-                    <img
-                      src="imgs/downloadnow.webp"
-                      class="max-w-fit object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </div> -->
-
-        <div class=""></div>
-
-        <!-- blog and slider -->
         <!-- Downlod now -->
 
         <div
@@ -449,92 +399,138 @@
 
         <!-- Download Now -->
 
-        <div class="lg:flex flex-col lg:flex-row gap-3">
-          <div class="">
-            <div class="bg-custom-image border-1 h-full">
-              <h2>بقلم عمر</h2>
+        <!-- Start blog-slider -->
+        <div class="flex flex-col-reverse lgMd:flex-row-reverse gap-3">
+          <a href="#" class="flex lgMd:w-[300px] w-full rounded-lg">
+            <div class="image-wrapper relative w-full lgMd:h-full h-[150px]">
+              <div
+                class="absolute w-full h-full bg-bgWrapper rounded-lg text-white flex flex-col justify-between p-2"
+              >
+                <h2>اسبوع : بقلم احمد يسري</h2>
+                <div class="flex flex-col gap-2">
+                  <span>الفريق الصيني يبدع</span>
+                  <span class="text-lg font-semibold">مراجعة لعبة :</span>
+                  <span class="text-2xl font-bold text-center"
+                    >Black Myth : Wukong</span
+                  >
+                </div>
+              </div>
+              <img
+                src="imgs/souls.jpg"
+                class="w-full rounded-lg h-full object-cover"
+              />
             </div>
-          </div>
+          </a>
 
           <div
             id="carouselExample"
-            class="carousel slide"
+            class="carousel slide !rounded-lg w-full relative"
             data-bs-ride="carousel"
           >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExample"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExample"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExample"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
+            <div
+              class="carousel-indicators w-full mx-auto absolute top-0 left-0 h-fit flex justify-end"
+            >
+              <div
+                class="bg-gray-800 m-3 px-3 h-[15px] flex justify-center items-center rounded-full"
+              >
+                <button
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide-to="0"
+                  class="active !w-[8px] !h-[8px]"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                  class="!w-[8px] !h-[8px]"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                  class="!w-[8px] !h-[8px]"
+                ></button>
+              </div>
             </div>
-
-            <div class="carousel-inner">
+            <div class="carousel-inner text-white rounded-tr-lg rounded-tl-lg">
               <div class="carousel-item active">
                 <img
                   src="imgs/cover1.jpg"
-                  class="d-block w-100"
+                  class="block relative w-full h-[270px] object-cover"
                   alt="Slide 1"
+                  style="box-shadow: inset 0 4px 6px rgba(22, 19, 19, 0.1)"
+                  alt="Image with inner shadow"
                 />
+
+                <div
+                  class="bg-bgWrapper flex flex-col py-2 px-3 justify-between absolute top-0 h-full w-full"
+                >
+                  <h1>جيمز : بقلم احمد يسري</h1>
+                  <p class="text-3xl font-bold text-center">
+                    أفة الرأسمالية | كيف اصبح مرتبطا بالمشهد التقني ؟
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="imgs/cover2.avif"
+                  class="block w-full h-[270px] object-cover"
+                  alt="Slide 2"
+                />
+
+                <div
+                  class="bg-bgWrapper flex flex-col py-2 px-3 justify-between absolute top-0 h-full w-full"
+                >
+                  <h1>جيمز : بقلم احمد يسري</h1>
+                  <p class="text-3xl font-bold text-center">
+                    أفة الرأسمالية | كيف اصبح مرتبطا بالمشهد التقني ؟
+                  </p>
+                </div>
               </div>
               <div class="carousel-item">
                 <img
                   src="imgs/cover1.jpg"
-                  class="d-block w-100"
-                  alt="Slide 1"
+                  class="block w-full h-[270px] object-cover"
+                  alt="Slide 3"
                 />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="imgs/cover1.jpg"
-                  class="d-block w-100"
-                  alt="Slide 1"
-                />
+
+                <div
+                  class="bg-bgWrapper flex flex-col py-2 px-3 justify-between absolute top-0 h-full w-full"
+                >
+                  <h1>جيمز : بقلم احمد يسري</h1>
+                  <p class="text-3xl font-bold text-center">
+                    أفة الرأسمالية | كيف اصبح مرتبطا بالمشهد التقني ؟
+                  </p>
+                </div>
               </div>
             </div>
-            <!-- <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button> -->
 
-            <p>Hello</p>
+            <div
+              class="bg-mainbgblue2 rounded-br-lg rounded-bl-lg text-white flex items-center py-6 container-custom justify-between"
+            >
+              <div>
+                <p>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  المقالات
+                </p>
+                <p class="mr-2 text-2xl font-bold mt-2">
+                  اطلع علي اخر المقالات والمعلومات
+                </p>
+              </div>
+
+              <div class="-rotate-45">
+                <a href="#"><i class="fa fa-arrow-up"></i> </a>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- End Blog slider-->
 
         <!-- Side one parts here -->
       </div>
@@ -545,7 +541,130 @@
     -->
 
       <!-- Side 2 of the page -->
-      <div class="col-span-3 bg-gray00 border hidden lg:block">Side 2</div>
+      <div
+        class="lg:col-span-3 order-last lg:order-first col-span-12 lg:flex flex-col text-white [&>*]:mt-5 mt-10"
+      >
+        <!--  -->
+
+        <!-- Greeting gamers -->
+        <div class="greet-gamers mb-14">
+          <div class="image-wrapper h-[200px]">
+            <img
+              src="imgs/goodmorning.jpg"
+              class="h-full w-full object-cover rounded-tr-lg rounded-tl-lg"
+            />
+            <div
+              class="shadow-2xl p-3 text-white bg-[#00000062] text-left rounded-br-lg rounded-bl-lg"
+            >
+              <p>صباح الخير</p>
+            </div>
+          </div>
+        </div>
+        <!-- Greeting gamers -->
+
+        <!-- Top trending -->
+        <div class="top-trending bg-[#00000062] rounded-lg p-2">
+          <h2 class="text-red-400 font-bold mt-2 mb-4">
+            <i class="fa-solid fa-circle"></i> الاكثر رواجا
+          </h2>
+
+          <div class="flex flex-wrap [&>*]:flex [&>*]:w-1/2 [&>*]:p-2">
+            <!-- First Row: 1 2 -->
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">1.</span> دونالد ترامب
+            </div>
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">2.</span> غزة الأن
+            </div>
+
+            <!-- Second Row: 3 4 -->
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">3.</span> الحرب الروسية
+            </div>
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">4.</span> فئران فرنسا
+            </div>
+
+            <!-- Third Row: 5 6 -->
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">5.</span> محتجي بريطانيا
+            </div>
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">6.</span> روبرت دافنشي
+            </div>
+
+            <!-- Fourth Row: 7 8 -->
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">7.</span> ايمان خليفة
+            </div>
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">8.</span> العشاء الأخير
+            </div>
+
+            <!-- Fifth Row: 9 10 -->
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">9.</span> ايران
+            </div>
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">10.</span> تشرنوبل
+            </div>
+          </div>
+        </div>
+
+        <!-- Top trending -->
+
+        <!-- Top trending -->
+        <div class="top-trending bg-[#00000062] rounded-lg p-2">
+          <h2 class="text-red-400 font-bold mt-2 mb-4">
+            <i class="fa-solid fa-circle"></i> الاكثر رواجا
+          </h2>
+
+          <div class="flex flex-wrap [&>*]:flex [&>*]:w-1/2 [&>*]:p-2">
+            <!-- First Row: 1 2 -->
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">1.</span> دونالد ترامب
+            </div>
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">2.</span> غزة الأن
+            </div>
+
+            <!-- Second Row: 3 4 -->
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">3.</span> الحرب الروسية
+            </div>
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">4.</span> فئران فرنسا
+            </div>
+
+            <!-- Third Row: 5 6 -->
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">5.</span> محتجي بريطانيا
+            </div>
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">6.</span> روبرت دافنشي
+            </div>
+
+            <!-- Fourth Row: 7 8 -->
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">7.</span> ايمان خليفة
+            </div>
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">8.</span> العشاء الأخير
+            </div>
+
+            <!-- Fifth Row: 9 10 -->
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">9.</span> ايران
+            </div>
+            <div class="flex w-1/2 p-2">
+              <span class="font-bold text-red-400">10.</span> تشرنوبل
+            </div>
+          </div>
+        </div>
+
+        <!-- Top trending -->
+      </div>
+      <!-- Side 2 of the page -->
     </div>
 
     <!-- Subscribe -->
