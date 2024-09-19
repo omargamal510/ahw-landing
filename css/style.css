@@ -24,6 +24,24 @@ nav {
   margin-right: auto;
 }
 
+.sm-nav-component {
+  opacity: 1;
+  visibility: 1;
+}
+
+.sm-nav {
+  max-width: 260px;
+  opacity: 1;
+  visibility: visible;
+  transition: max-width 0.3s linear, opacity 0.3s linear, visibility 0.3s linear;
+}
+
+.sm-nav-closed {
+  max-width: 0px;
+  opacity: 0;
+  visibility: hidden;
+}
+
 /* Responsive Breakpoints */
 @media (min-width: 576px) {
   .container {

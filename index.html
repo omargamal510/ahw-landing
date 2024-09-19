@@ -28,9 +28,9 @@
   </head>
   <body class="bg-mainbgblue">
     <!-- Start Navbar -->
-    <nav class="shadow-3xl h-16 text-white container-custom">
+    <nav class="shadow-3xl h-16 text-white relative">
       <div
-        class="flex justify-between items-center gap-5 h-full [&>*]:w-full [&>*]:h-9 [&>*]:bg-gray-"
+        class="container-custom flex justify-between items-center gap-5 h-full [&>*]:w-full [&>*]:h-9 [&>*]:bg-gray-"
       >
         <section class="flex items-center gap-3">
           <button class="sm-nav-toggle block lg:hidden">
@@ -113,6 +113,93 @@
       </div>
     </nav>
     <!-- End Navbar -->
+
+    <!-- SM nav -->
+    <div
+      class="sm-nav-closed sm-nav-holder z-10 fixed top-0 h-screen w-screen bg-[#0000007A]"
+    >
+      <div class="sm-nav h-full bg-white px-5 py-2">
+        <button class="sm-nav-close p-1">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <ul class="flex flex-col gap-3 mt-5">
+          <h3 class="font-black">القائمة</h3>
+
+          <li>
+            <a href="#" class="hover:text-red-500">اخبار</a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:text-red-500">المتجر</a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:text-red-500">مقالات</a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:text-red-500 whitespace-nowrap"
+              >رسائل الكترونيه</a
+            >
+          </li>
+        </ul>
+
+        <ul class="flex justify-center gap-3 mt-5">
+          <li>
+            <a href="#" class="hover:text-red-500">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-red-500">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-red-500">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-red-500">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-red-500">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-red-500">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="header-placeholder"></div>
+
+    <!-- SM Nav -->
+    <!-- ======================================================================================================================================================================================= 
+    =======================================================================================================================================================================================
+    ======================================================================================================================================================================================= 
+    -->
+
+    <script>
+      // function loadHTML(selector, filePath) {
+      //   fetch(filePath)
+      //     .then((response) => response.text())
+      //     .then((data) => {
+      //       document.querySelector(selector).innerHTML = data;
+      //     })
+      //     .catch((error) => console.error("Error loading HTML:", error));
+      // }
+
+      // loadHTML("#header-placeholder", "partials/header.html");
+    </script>
 
     <script src="js/script.js"></script>
   </body>
