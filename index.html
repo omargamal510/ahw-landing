@@ -23,7 +23,14 @@
     />
 
     <link href="css/tailwindcss.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link href="css/style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <title>AHW</title>
   </head>
   <body class="bg-mainbgblue">
@@ -189,47 +196,123 @@
     -->
 
     <div
-      class="whole-page-grid mt-16 container-custom grid grid-cols-12 gap-4 h-screen"
+      class="whole-page-grid mt-16 container-custom grid grid-cols-12 gap-4 h-screen overflow-hidden"
     >
       <!-- Side 1 of the page-->
-      <div class="col-span-12 md:col-span-9">
+      <div class="col-span-12 lg:col-span-9">
         <!-- Side one parts here -->
-        <!-- Start Trending section -->
-        <div class="trending gap-7 text-white flex-wrap hidden md:flex">
-          <h2 class="text-lg font-bold">تريند 🔥</h2>
-          <div class="flex gap-5 flex-wrap">
-            <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
-            <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
-            <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
-            <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
-            <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
-          </div>
-        </div>
-        <!-- End Trending -->
-
-        <!-- Start Page navigation -->
-        <div class="page-navigation mt-10">
-          <ul class="text-white flex justify-center items-center gap-5">
-            <li>
-              <a href="#" class="border-b-4 border-red-400 text-red-400 pb-2"
-                >الجميع</a
+        <div class="flex flex-col gap-10">
+          <!-- Start Trending section -->
+          <div class="trending gap-7 text-white flex-wrap hidden md:flex">
+            <h2 class="text-lg font-bold">تريند 🔥</h2>
+            <div class="flex gap-5 flex-wrap">
+              <a class="hover:text-red-500" href="#"
+                >مستجدات الحرب علي غزة ⭐</a
               >
-            </li>
+              <a class="hover:text-red-500" href="#"
+                >مستجدات الحرب علي غزة ⭐</a
+              >
+              <a class="hover:text-red-500" href="#"
+                >مستجدات الحرب علي غزة ⭐</a
+              >
+              <a class="hover:text-red-500" href="#"
+                >مستجدات الحرب علي غزة ⭐</a
+              >
+              <a class="hover:text-red-500" href="#"
+                >مستجدات الحرب علي غزة ⭐</a
+              >
+            </div>
+          </div>
+          <!-- End Trending -->
 
-            <li>
-              <a href="#">من أجلك</a>
-            </li>
-          </ul>
+          <!-- Start Page navigation -->
+          <div class="page-navigation mt-10">
+            <ul class="text-white flex justify-center items-center gap-5">
+              <li>
+                <a href="#" class="border-b-4 border-red-400 text-red-400 pb-2"
+                  >الجميع</a
+                >
+              </li>
 
-          <button class="page-bars mt-5 relative">
-            <i class="fa fa-bars text-white text-2xl">
-              <i class="fa fa-angle-left absolute right-[-7px] top-1"></i>
-            </i>
-          </button>
+              <li>
+                <a href="#">من أجلك</a>
+              </li>
+            </ul>
+
+            <button class="page-bars mt-5 relative">
+              <i class="fa fa-bars text-white text-2xl">
+                <i class="fa fa-angle-left absolute right-[-7px] top-1"></i>
+              </i>
+            </button>
+          </div>
+
+          <!-- End Page navigation -->
+
+          <!-- blog and slider -->
+          <div class="blog-n-slider grid grid-cols-12 gap-4">
+            <div class="col-span-3 bg-blue-300 h-[385px]">
+              <div class="bg-custom-image w-full h-full">
+                <h2>بقلم عمر</h2>
+              </div>
+            </div>
+
+            <div class="w-full relative col-span-9">
+              <div
+                class="swiper default-carousel swiper-container rounded-xl w-full"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-indigo-50 rounded-2xl h-auto flex justify-center items-center relative"
+                    >
+                      <img
+                        src="imgs/downloadnow.webp"
+                        class="max-w-fit object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-indigo-50 rounded-2xl h-auto flex justify-center items-center relative"
+                    >
+                      <img
+                        src="imgs/downloadnow.webp"
+                        class="max-w-fit object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="bg-indigo-50 rounded-2xl h-auto flex justify-center items-center relative"
+                    >
+                      <img
+                        src="imgs/downloadnow.webp"
+                        class="max-w-fit object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <!-- blog and slider -->
+          <!-- Downlod now -->
+
+          <div
+            class="download-now w-full bg-white h-[300px] text-black"
+            style="box-shadow: 0 10px 60px 10px rgba(224, 59, 59, 0.5)"
+          >
+            <a href="#">
+              <img src="imgs/downloadnow.webp" class="w-full" />
+            </a>
+          </div>
+
+          <!-- Download Now -->
+
+          <!-- Side one parts here -->
         </div>
-
-        <!-- End Page navigation -->
-        <!-- Side one parts here -->
       </div>
 
       <!-- ======================================================================================================================================================================================= 
@@ -238,8 +321,29 @@
     -->
 
       <!-- Side 2 of the page -->
-      <div class="col-span-3 bg-gray-700 hidden lgMd:block">Side 2</div>
+      <div class="col-span-3 bg-gray00 border hidden lg:block">Side 2</div>
     </div>
+
+    <script>
+      var swiper = new Swiper(".default-carousel", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: false,
+        },
+        autoplay: {
+          delay: 3000, // Delay between transitions in milliseconds
+          disableOnInteraction: false, // Continue autoplay after user interactions
+        },
+
+        speed: 800,
+        // Uncomment and configure navigation if needed
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+      });
+    </script>
 
     <script>
       // function loadHTML(selector, filePath) {
@@ -253,6 +357,9 @@
 
       // loadHTML("#header-placeholder", "partials/header.html");
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Slick Carousel JS -->
 
     <script src="js/script.js"></script>
   </body>

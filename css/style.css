@@ -68,3 +68,26 @@ nav {
     max-width: 1140px;
   }
 }
+
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.swiper-pagination-bullet {
+  background: #4f46e5;
+}
+
+.bg-custom-image {
+  background: url("../imgs/souls.jpg") center center no-repeat;
+  background-size: cover; /* Optional: Adjust the background size */
+  width: 300px;
+  height: 100px;
+}
+
+.red-box-shadow {
+  box-shadow: "3px 3px 1px #ccc";
+}

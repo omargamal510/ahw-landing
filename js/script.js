@@ -3,6 +3,16 @@
 Start Navbar
 
 */
+// $(document).ready(function () {
+//   $(".slick-carousel").slick({
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     dots: true,
+//     infinite: true,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//   });
+// });
 
 function handleUserNotification() {
   const userDropDown = document.querySelector(".drop-down-user");
