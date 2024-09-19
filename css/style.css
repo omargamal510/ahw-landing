@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
 
 * {
   margin: 0;
@@ -84,8 +83,10 @@ nav {
 .bg-custom-image {
   background: url("../imgs/souls.jpg") center center no-repeat;
   background-size: cover; /* Optional: Adjust the background size */
-  width: 300px;
-  height: 100px;
+  min-width: 200px;
+  max-width: 250px;
+  height: 300px;
+  color: #213c4786;
 }
 
 .red-box-shadow {
@@ -102,4 +103,8 @@ footer {
   background-color: #000000c5;
   height: 100%;
   padding: 50px 0px 10px 0px;
+}
+
+.carousel-indicators button {
+  border-radius: 50%;
 }
