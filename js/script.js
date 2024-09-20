@@ -102,6 +102,13 @@ $(document).ready(function () {
   });
 });
 
+const nextManipulator = document.querySelector(".next-manipulator");
+nextManipulator.addEventListener("click", function () {
+  const owlNext = document.querySelector(".owl-carousel1 .owl-next");
+  if (owlNext) {
+    owlNext.click();
+  }
+});
 $(document).ready(function () {
   $(".owl-carousel2").owlCarousel({
     loop: true,
@@ -109,7 +116,7 @@ $(document).ready(function () {
     rtl: true, // Enable RTL mode
     autoplay: true,
     autoplayTimeout: 3000,
-    nav: true, // Enable navigation arrows
+    nav: false, // Enable navigation arrows
     dots: true,
     autoplayHoverPause: true,
     responsive: {
@@ -129,11 +136,3 @@ $(document).ready(function () {
     },
   });
 });
-
-function handleClickNext() {
-  const owlNext = document.querySelector(".owl-next").click();
-}
-
-const nextManipulator = document
-  .querySelector(".next-manipulator")
-  .addEventListener("click", handleClickNext);
