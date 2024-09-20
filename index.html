@@ -117,7 +117,6 @@
           </div>
 
           <div class="flex justify-end items-center gap-3 relative">
-            <!-- JS Text based -->
             <p class="user-greeting-text hidden sm:block"></p>
             <button class="user-button">
               <i class="fa-solid fa-user bg-purple-900 p-3 rounded-full"></i>
@@ -217,7 +216,7 @@
     -->
 
     <div
-      class="whole-page-grid mt-16 container-custom grid grid-cols-12 gap-4 overflow-hidden"
+      class="whole-page-grid mt-0 container-custom grid grid-cols-12 gap-4 overflow-hidden"
     >
       <!--  -->
       <!-- Side 1 of the page-->
@@ -225,12 +224,9 @@
         <!-- Side one parts here -->
 
         <!-- Start Trending section -->
-        <div class="trending gap-7 text-white flex-wrap hidden md:flex">
+        <div class="trending gap-3 flex-wrap text-white flex">
           <h2 class="text-lg font-bold">تريند 🔥</h2>
-          <div class="flex gap-5 flex-wrap">
-            <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
-            <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
-            <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
+          <div class="flex gap-3 flex-wrap">
             <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
             <a class="hover:text-red-500" href="#">مستجدات الحرب علي غزة ⭐</a>
           </div>
@@ -1483,7 +1479,7 @@
 
       <!-- Side 2 of the page -->
       <div
-        class="lg:col-span-3 order-first col-span-12 lg:flex flex-col text-white [&>*]:mt-5 mt-10"
+        class="lg:col-span-3 order-first col-span-12 hidden lg:flex flex-col text-white [&>*]:mt-5 mt-10"
       >
         <!--  -->
 
@@ -1621,7 +1617,7 @@
         <input
           type="text"
           placeholder="Type your Email"
-          class="h-10 px-2 w-72 bg-gray-600 rounded-br-lg rounded-tr-lg"
+          class="h-10 px-2 w-60 lg:w-72 bg-gray-600 rounded-br-lg rounded-tr-lg"
         />
         <button class="bg-red-400 rounded-bl-lg rounded-tl-lg mr-[-4px] px-4">
           Subscribe
@@ -1748,18 +1744,9 @@
       });
     </script> -->
 
-    <script>
-      // function loadHTML(selector, filePath) {
-      //   fetch(filePath)
-      //     .then((response) => response.text())
-      //     .then((data) => {
-      //       document.querySelector(selector).innerHTML = data;
-      //     })
-      //     .catch((error) => console.error("Error loading HTML:", error));
-      // }
+    <!-- <div id="header-placeholder"></div> -->
 
-      // loadHTML("#header-placeholder", "partials/header.html");
-    </script>
+    <script></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
