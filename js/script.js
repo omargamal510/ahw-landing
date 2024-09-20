@@ -72,3 +72,40 @@ const smNavClose = document
 /*
     End Navbar
 */
+
+// ======================================
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 30,
+    rtl: true, // Enable RTL mode
+    autoplay: true,
+    autoplayTimeout: 3000,
+    nav: true, // Enable navigation arrows
+    dots: false,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+
+      1400: {
+        items: 5,
+      },
+    },
+  });
+});
+
+function handleClickNext() {
+  const owlNext = document.querySelector(".owl-next").click();
+}
+
+const nextManipulator = document
+  .querySelector(".next-manipulator")
+  .addEventListener("click", handleClickNext);

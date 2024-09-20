@@ -31,17 +31,26 @@
     <!-- Bootstrap Carousel JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <!-- 
     <link href="css/tailwindcss.css" rel="stylesheet" /> -->
+
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
 
     <link href="css/style.css" rel="stylesheet" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <title>AHW</title>
   </head>
@@ -212,9 +221,7 @@
     >
       <!--  -->
       <!-- Side 1 of the page-->
-      <div
-        class="col-span-12 order-last lg:order-first lg:col-span-9 [&>*]:mt-10"
-      >
+      <div class="col-span-12 lg:order-first lg:col-span-9 [&>*]:mt-10">
         <!-- Side one parts here -->
 
         <!-- Start Trending section -->
@@ -399,6 +406,116 @@
 
         <!-- Download Now -->
 
+        <!-- Products -->
+        <div
+          class="products relative text-white bg-mainbgblue2 container-custom rounded-lg"
+        >
+          <div class="products-title flex justify-between py-5">
+            <h2>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> أحدث
+              المنتجات
+            </h2>
+
+            <div class="-rotate-45">
+              <a href="#"><i class="fa fa-arrow-up"></i> </a>
+            </div>
+          </div>
+
+          <div class="owl-carousel owl-theme">
+            <div
+              class="item my-3 shadow-2xl rounded-lg border-1 border-mainbgblue"
+            >
+              <img src="imgs/laptop.jpg" class="rounded-tr-lg rounded-tl-lg" />
+
+              <div class="product-desc flex flex-col gap-2 p-2 text-left">
+                <h4 class="text-sm">
+                  Lenovo ThinkPad E14 Gen2 Laptop Core i7 1165G7 8GB RAM 512GB
+                  SSD 14" - 20TA003FAD
+                </h4>
+                <p class="price text-lg font-bold">4,169 EGP</p>
+                <a class="self-start text-sm text-red-500 font-bold" href="#"
+                  >التسوق الأن</a
+                >
+              </div>
+            </div>
+            <div
+              class="item my-3 shadow-2xl rounded-lg border-1 border-mainbgblue"
+            >
+              <img src="imgs/laptop.jpg" class="rounded-tr-lg rounded-tl-lg" />
+
+              <div class="product-desc flex flex-col gap-2 p-2 text-left">
+                <h4 class="text-sm">
+                  Lenovo ThinkPad E14 Gen2 Laptop Core i7 1165G7 8GB RAM 512GB
+                  SSD 14" - 20TA003FAD
+                </h4>
+                <p class="price text-lg font-bold">4,169 EGP</p>
+                <a class="self-start text-sm text-red-500 font-bold" href="#"
+                  >التسوق الأن</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="item my-3 shadow-2xl rounded-lg border-1 border-mainbgblue"
+            >
+              <img src="imgs/laptop.jpg" class="rounded-tr-lg rounded-tl-lg" />
+
+              <div class="product-desc flex flex-col gap-2 p-2 text-left">
+                <h4 class="text-sm">
+                  Lenovo ThinkPad E14 Gen2 Laptop Core i7 1165G7 8GB RAM 512GB
+                  SSD 14" - 20TA003FAD
+                </h4>
+                <p class="price text-lg font-bold">4,169 EGP</p>
+                <a class="self-start text-sm text-red-500 font-bold" href="#"
+                  >التسوق الأن</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="item my-3 shadow-2xl rounded-lg border-1 border-mainbgblue"
+            >
+              <img src="imgs/laptop.jpg" class="rounded-tr-lg rounded-tl-lg" />
+
+              <div class="product-desc flex flex-col gap-2 p-2 text-left">
+                <h4 class="text-sm">
+                  Lenovo ThinkPad E14 Gen2 Laptop Core i7 1165G7 8GB RAM 512GB
+                  SSD 14" - 20TA003FAD
+                </h4>
+                <p class="price text-lg font-bold">4,169 EGP</p>
+                <a class="self-start text-sm text-red-500 font-bold" href="#"
+                  >التسوق الأن</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="item my-3 shadow-2xl rounded-lg border-1 border-mainbgblue"
+            >
+              <img src="imgs/laptop.jpg" class="rounded-tr-lg rounded-tl-lg" />
+
+              <div class="product-desc flex flex-col gap-2 p-2 text-left">
+                <h4 class="text-sm">
+                  Lenovo ThinkPad E14 Gen2 Laptop Core i7 1165G7 8GB RAM 512GB
+                  SSD 14" - 20TA003FAD
+                </h4>
+                <p class="price text-lg font-bold">4,169 EGP</p>
+                <a class="self-start text-sm text-red-500 font-bold" href="#"
+                  >التسوق الأن</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="h-full absolute top-0 left-[-15px] h-full flex items-center"
+          >
+            <button class="bg-mainbgblue next-manipulator border p-2 px-2">
+              <i class="fa fa-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Products -->
         <!-- Start blog-slider -->
         <div class="flex flex-col-reverse lgMd:flex-row-reverse gap-3">
           <a href="#" class="flex lgMd:w-[300px] w-full rounded-lg">
@@ -532,7 +649,7 @@
 
         <!-- End Blog slider-->
 
-        <!-- Side one parts here -->
+        <!-- Side 1 parts here -->
       </div>
 
       <!-- ======================================================================================================================================================================================= 
@@ -542,7 +659,7 @@
 
       <!-- Side 2 of the page -->
       <div
-        class="lg:col-span-3 order-last lg:order-first col-span-12 lg:flex flex-col text-white [&>*]:mt-5 mt-10"
+        class="lg:col-span-3 order-first col-span-12 lg:flex flex-col text-white [&>*]:mt-5 mt-10"
       >
         <!--  -->
 
@@ -778,6 +895,9 @@
     </footer>
     <!-- Footer -->
 
+    <!-- Products -->
+
+    <!-- Products -->
     <script>
       var myCarousel = document.querySelector("#carouselExample");
       var carousel = new bootstrap.Carousel(myCarousel, {
@@ -791,7 +911,7 @@
       });
     </script>
 
-    <script>
+    <!-- <script>
       var swiper = new Swiper(".default-carousel", {
         loop: true,
         pagination: {
@@ -802,15 +922,10 @@
           delay: 3000, // Delay between transitions in milliseconds
           disableOnInteraction: false, // Continue autoplay after user interactions
         },
-
         speed: 800,
-        // Uncomment and configure navigation if needed
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
+        rtl: true, // Enable RTL mode
       });
-    </script>
+    </script> -->
 
     <script>
       // function loadHTML(selector, filePath) {
@@ -826,7 +941,7 @@
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Slick Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script src="js/script.js"></script>
   </body>
