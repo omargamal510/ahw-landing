@@ -120,6 +120,12 @@ footer {
   display: none !important;
 }
 
+.owl-carousel2 .owl-dots {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
 /* .product {
   position: relative;
   overflow: hidden;

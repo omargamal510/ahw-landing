@@ -75,7 +75,7 @@ const smNavClose = document
 
 // ======================================
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  $(".owl-carousel1").owlCarousel({
     loop: true,
     margin: 30,
     rtl: true, // Enable RTL mode
@@ -97,6 +97,34 @@ $(document).ready(function () {
 
       1400: {
         items: 5,
+      },
+    },
+  });
+});
+
+$(document).ready(function () {
+  $(".owl-carousel2").owlCarousel({
+    loop: true,
+    margin: 30,
+    rtl: true, // Enable RTL mode
+    autoplay: true,
+    autoplayTimeout: 3000,
+    nav: true, // Enable navigation arrows
+    dots: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+
+      1400: {
+        items: 1,
       },
     },
   });
